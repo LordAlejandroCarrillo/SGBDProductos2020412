@@ -1,15 +1,9 @@
-<%-- 
-    Document   : index
-    Created on : 3/07/2024, 09:26:01
-    Author     : informatica
---%>
-
 <%@page contentType="text/html" pageEncoding="windows-1252"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-        <title>JSP Page</title>
+        <title>ProductosKinal</title>
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     </head>
     <body>
@@ -35,7 +29,10 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="productos/formProductos.html">Formulario Productos</a>
-                      </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos/listaProductos.html">Lista Productos</a>
+                    </li>
                   </ul>
                   <form class="d-flex mt-3" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -45,6 +42,6 @@
               </div>
             </div>
           </nav>
-          <img src="productos/assets/image/kinal.jpg" alt="kinal" style="width: 100%;">
+          <img src="productos/assets/image/kinal.jfif" alt="kinal" style="width: 100%;">
     </body>
 </html>
