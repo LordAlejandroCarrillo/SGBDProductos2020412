@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/SGBDProductosIN5CM2020412">
+  <source auth="Container" driverClassName="com.mysql.cj.jdbc.Driver" maxIdle="30" maxTotal="100" maxWaitMillis="10000" name="jdbc/SGBDProductos2020412" password="ghZDHZVX1416" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/SGBDProductos2020412?serverTimezone=GMT-6" username="alejandroCarrillo"/>
+</Context>
