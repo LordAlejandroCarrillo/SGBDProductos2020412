@@ -1,18 +1,18 @@
-<?XML version="1.0" ecoding="UTF-8"?>
-<Percistance>
-    <percistance-unit name="SGBDProductos2020412" transaction-type="RESOURCE_LOCAL">
-        <provider>org.hibernate.jpa.HibernatePersistanceProvider</provider>
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="3.0" xmlns="https://jakarta.ee/xml/ns/persistence">
+    <persistence-unit name="SGBDProductos2020412" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <properties>
-            <property name="jakarta.persistance.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
-            <property name="jakarta.persistance.jdbc.url" value="jdbc:mysql://localhost:3306/SGBDProductos2020412?serverTimezone=GMT-6"/>
-            <property name="jakarta.persistance.jdbc.user" value="alejandroCarrillo"/>
-            <property name="jakarta.persistance.jdbc.password" value="ghZDHZVX1416"/>
+            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/SGBDProductos2020412?serverTimezone=GMT-6"/>
+            <property name="jakarta.persistence.jdbc.user" value="root"/>
+            <property name="jakarta.persistence.jdbc.password" value="admin"/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
             <property name="hibermate.hbm2ddl.auto" value="create"/>
-            <!-- opcional -->
+
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.format_sql" value="true"/>
             <property name="jakarta.persistence.schema-generation.database.action" value="update"/>
         </properties>
-    </percistance-unit>
-</Percistance>
+    </persistence-unit>
+</persistence>

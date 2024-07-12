@@ -28,10 +28,10 @@
                       <a class="nav-link">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="productos/formProductos.html">Formulario Productos</a>
+                        <a class="nav-link" href="productos/formProductos.jsp">Formulario Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="productos/listaProductos.html">Lista Productos</a>
+                        <a class="nav-link" href="./producto-servlet">Lista Productos</a>
                     </li>
                   </ul>
                   <form class="d-flex mt-3" role="search">

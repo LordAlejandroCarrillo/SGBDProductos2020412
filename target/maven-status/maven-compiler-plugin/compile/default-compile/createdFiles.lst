@@ -1,1 +1,4 @@
+org\alejandrocarrillo\webapp\utils\JpaUtil.class
 org\alejandrocarrillo\webapp\servlet\ProductoServlet.class
+org\alejandrocarrillo\webapp\entity\Producto.class
+newpackage\Main.class
