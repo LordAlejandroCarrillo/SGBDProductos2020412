@@ -1,4 +1,6 @@
 <%@page contentType="text/html" pageEncoding="windows-1252"%>
+<%@page import = "java.util.ArrayList"%>
+<%@page import = "org.alejandrocarrillo.webapp.entity.Producto"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -47,27 +49,41 @@
 
         <nav class="position-relative navbar navbar-dark bg-dark fixed-top">
         </nav>
+        <div>
+            <% ArrayList<String> producto = (ArrayList)request.getAttribute("productos");%>
+            <%
+                if(producto != null){
+                    for(String prod:producto){%>
+                    <ul>
+                        <li><%=prod%></li>
+                    </ul>
+                <%}
+                }
+            %>
+        </div>
         <div class="container mt-5 w-75">
-            <div class="form-floating mb-4">
-                <input class="form-control" id="nombreProducto" name="nombreProducto" type="text">
-                <label for="nombreProducto">Nombre Producto</label>
-            </div>
-            <div class="form-floating mb-4">
-                <textarea class="form-control" id="descripcionProducto" placeholder="" name="descripcionProducto"></textarea>
-                <label for="descripcionProducto">Descripción del Producto</label>
-            </div>
-            <div class="form-floating mb-4">
-                <input type="text" class="form-control" id="marcaProducto" name="marcaProducto">
-                <label for="floatingInput">Marca del Producto</label>
-            </div>
-            <div class="input-group mb-4">
-                <span class="input-group-text">Q.</span>
-                <input type="text" class="form-control" name="precioProducto" id="precioProducto">
-                <span class="input-group-text">.00</span>
-            </div>
-            <div>
-                <input type="submit" class="btn btn-outline-success">
-            </div>
+            <form action="/SGBDProductosIN5CM2020412/producto-servlet" method="post" enctype="multipart/form-data">
+                <div class="form-floating mb-4">
+                    <input class="form-control" id="nombreProducto" name="nombreProducto" type="text">
+                    <label for="nombreProducto">Nombre Producto</label>
+                </div>
+                <div class="form-floating mb-4">
+                    <textarea class="form-control" id="descripcionProducto" placeholder="" name="descripcionProducto"></textarea>
+                    <label for="descripcionProducto">Descripción del Producto</label>
+                </div>
+                <div class="form-floating mb-4">
+                    <input type="text" class="form-control" id="marcaProducto" name="marcaProducto">
+                    <label for="floatingInput">Marca del Producto</label>
+                </div>
+                <div class="input-group mb-4">
+                    <span class="input-group-text">Q.</span>
+                    <input type="text" class="form-control" name="precioProducto" id="precioProducto">
+                    <span class="input-group-text">.00</span>
+                </div>
+                <div>
+                    <input type="submit" class="btn btn-outline-success">
+                </div>
+            </form>
         </div>
     </body>
 </html>
